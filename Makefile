@@ -1,8 +1,8 @@
-PLUGIN_NAME = gH
+PLUGIN_NAME = H-current
 
-HEADERS = gH.h
+HEADERS = h-current.h
 
-SOURCES = gH.cpp \
+SOURCES = h-current.cpp \
 
 LIBS = 
 
