@@ -5,6 +5,10 @@
 
 ![H+ Current GUI](h-current.png)
 
+<!--start-->
+Description pending
+<!--end-->
+
 ####Input Channels:
 1. input(0) - Vin : the voltage of the cell to which I[H+] is to be added
 
