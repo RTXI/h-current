@@ -1,4 +1,4 @@
-PLUGIN_NAME = H-current
+PLUGIN_NAME = h_current
 
 HEADERS = h-current.h
 
