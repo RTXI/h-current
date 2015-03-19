@@ -42,11 +42,12 @@ static DefaultGUIModel::variable_t vars[] =
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 
 G_H::G_H(void) : DefaultGUIModel("H Conductance", ::vars, ::num_vars) {
+	createGUI(vars, num_vars);
 	Gh_max = 10e-12; //Peak conductance in Amps
 	Vh_rev = -0.02; //Reversal potential of Ih channel not corrected for junction potential
-	createGUI(vars, num_vars);
-	update( INIT);
+	update(INIT);
 	refresh();
+	QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
 
 G_H::~G_H(void) {}
