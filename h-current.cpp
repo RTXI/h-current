@@ -47,7 +47,7 @@ G_H::G_H(void) : DefaultGUIModel("H Conductance", ::vars, ::num_vars) {
 	Vh_rev = -0.02; //Reversal potential of Ih channel not corrected for junction potential
 	update(INIT);
 	refresh();
-	QTimer::singleShot(0, this, SLOT(resizeMe()));
+	resizeMe();
 }
 
 G_H::~G_H(void) {}
