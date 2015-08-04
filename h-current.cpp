@@ -45,6 +45,7 @@ G_H::G_H(void) : DefaultGUIModel("H Conductance", ::vars, ::num_vars) {
 	createGUI(vars, num_vars);
 	Gh_max = 10e-12; //Peak conductance in Amps
 	Vh_rev = -0.02; //Reversal potential of Ih channel not corrected for junction potential
+	Ih = 0.0; //Display 0 upon initialization instead of junk
 	update(INIT);
 	refresh();
 	resizeMe();
